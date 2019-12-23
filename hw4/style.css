@@ -1,0 +1,155 @@
+ body {
+     background-image:linear-gradient(#eba3f0, #5ee6b9, #820e0e);
+ } 
+
+
+
+.titletask {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.vid {
+    width: 400px;
+    height: 300px;
+    margin-top: 2%;
+}
+
+.aud {
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px;
+}
+
+hr {
+    margin: 50px;
+}
+/******************* second task ****************/
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    transition: transform 1.5s ease;
+    transform-style: preserve-3d;
+    
+}
+
+.card p {
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.cardfront, .cardback {
+    backface-visibility:hidden;
+  }
+
+.cardfront {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+    background-color:rgb(38, 120, 214);
+}
+
+.cardback {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(235, 107, 57);
+    transform: rotateY(-180deg);
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: rotateY(-180deg);
+}
+
+/************* third task *************/
+
+
+.menu {
+    position:relative;
+    background-color: gray;
+    width: 300px;
+    height: 600px;
+    left: -350px;
+    margin:0;
+    padding: 50px;
+    color:white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    transition: transform 1s ease;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s;
+    display: inline-block;
+}
+
+li {
+    
+    list-style-type:none;
+    margin: 20px;
+}
+
+li::before {
+    content: "";
+    margin-right: 15px;
+    background-color: orange;
+    border: solid 2px black;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+  
+li:hover a{
+    color: orange; 
+    transform: translateX(10px); 
+}
+
+.menuhere {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    right: -100px;
+}
+
+.menu:hover {
+    transform: translateX(300px);
+}
+
+.menu:hover .menuhere {
+    display: none;
+}

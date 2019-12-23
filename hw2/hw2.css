@@ -1,0 +1,102 @@
+blockquote {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+blockquote p {
+    padding: 7%;
+    background: rgb(177, 231, 238);
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(111, 224, 111);
+}
+
+footer {
+    color: black;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+section.homework::first-line {
+    color: pink;
+}
+
+#greycol {
+    color: grey;
+}
+
+div p {
+    color: rgb(175, 24, 24);
+}
+
+section.homework *:nth-last-child(2) {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul::first-line {
+    color: green;
+}
+
+ul li:nth-child(even) {
+    font-size: 20px;
+}
+
+ul li:nth-child(odd) {
+    font-size: 18px;
+}
+
+li:first-child,
+li:nth-child(3n + 1) {
+    background-color: yellow;
+}
+
+ul li::before {
+    content: "-";
+}
+
+.linkandroid::after {
+    content: 'Hello World!';
+}
+
+.linkandroid:hover:after {
+    content: 'Nice to meet you!';
+}
+
+.linkandroid {
+    text-decoration: none;
+    color: green;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+section.thirdex {
+    background-color: green;
+}
+
+.bg-box {
+
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    background: url(https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png), url(https://www.freeiconspng.com/uploads/lamp-png-0.png), url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru), url(https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png), url("https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg");
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
+    background-size: 200px 200px, 35px 50px, 25px 35px, 25px 35px, 400px 200px;
+    background-position: left bottom, left top, left, right, center;
+}
